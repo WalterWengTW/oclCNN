@@ -109,7 +109,6 @@ kernel void DWConv2D(constant int* info, global float* X, constant float* F, con
 kernel void Dense(constant int* info, global const float* X, constant float* W, constant float* B, global float* Y)
 {
 	// info[0] : input channels(neurons)
-	
 	int batch = get_global_id(1);
 	int neuron = get_global_id(0);
 	int Nneuron = get_global_size(0);

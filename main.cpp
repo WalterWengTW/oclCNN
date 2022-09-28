@@ -11,6 +11,7 @@ int main()
     auto devices = ocl::getDeviceID(dPlatform);
     dDevice = devices[0];
 
+
     dContext = ocl::createContext(dPlatform, dDevice);
     dQueue = ocl::createQueue(dContext, dDevice);
 
@@ -214,7 +215,7 @@ int main()
     model.add(new ocl::dense(model.back(), 2));
     //model.add(new ocl::softmax(model.back()));
 
-    //model.summary();
+    model.summary();
 
     model.loadWeight("detector.bin");
 

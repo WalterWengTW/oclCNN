@@ -58,6 +58,7 @@ bool ocl::sequential::loadWeight(std::string f)
         seq[i]->setKernel();
     }
     printf("Model deployed.\n");
+    delete [] buffer;
     return true;
 }
 
