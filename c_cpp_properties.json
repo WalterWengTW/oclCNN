@@ -1,0 +1,36 @@
+{
+    "configurations": [
+        {
+            "name": "Win32",
+            "compilerPath": "C:\\TDM-GCC-64\\bin\\x86_64-w64-mingw32-g++.exe",
+            "includePath": [
+                "${workspaceRoot}",
+                "C:\\TDM-GCC-64\\include",                
+                "C:\\TDM-GCC-64\\lib\\gcc\\x86_64-w64-mingw32\\8.1.0\\include",
+                "C:\\TDM-GCC-64\\lib\\gcc\\x86_64-w64-mingw32\\8.1.0\\include\\c++",
+                "D:\\opencv-4.2.0\\build\\install\\include",
+                "C:\\lightOCLSDK\\include"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "__GNUC__=5",
+                "__cdecl=__attribute__((__cdecl__))"
+            ],
+            "intelliSenseMode": "clang-x64",
+            "browse": {
+                "path": [
+                    "${workspaceRoot}",
+                    "C:\\TDM-GCC-64\\include",                    
+                    "C:\\TDM-GCC-64\\lib\\gcc\\x86_64-w64-mingw32\\8.1.0\\include",                
+                    "C:\\TDM-GCC-64\\lib\\gcc\\x86_64-w64-mingw32\\8.1.0\\include\\c++",                    
+                    "D:\\opencv-4.2.0\\build\\install\\include",
+                    "C:\\lightOCLSDK\\include"
+                ],
+                "limitSymbolsToIncludedHeaders": true,
+                "databaseFilename": ""
+            }
+        }
+    ],
+    "version": 4
+}

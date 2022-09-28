@@ -1,0 +1,55 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "-g",
+                "main.cpp",
+                "sequential.cpp",
+                "basic.cpp",
+                "layer_add.cpp",
+                "layer_basic.cpp",
+                "layer_batchNorm.cpp",
+                "layer_conv2d.cpp",
+                "layer_dense.cpp",
+                "layer_dwconv2d.cpp",
+                "layer_globalAvg.cpp",
+                "layer_input.cpp",
+                "layer_pwconv2d.cpp",
+                "layer_relu.cpp",
+                "layer_relu6.cpp",
+                "layer_softmax.cpp",
+                "layer.cpp",
+                "ocl.cpp",
+                "-o", 
+                "main.exe",                
+                "-I","D:\\opencv-4.2.0\\build\\install\\include",
+                "-L","D:\\opencv-4.2.0\\build\\install\\x64\\mingw\\bin",                
+                "-l","libopencv_calib3d420",
+                "-llibopencv_core420",
+                "-llibopencv_dnn420",
+                "-llibopencv_features2d420",
+                "-llibopencv_flann420",
+                "-llibopencv_highgui420",
+                "-llibopencv_imgcodecs420",
+                "-llibopencv_imgproc420",
+                "-llibopencv_ml420",
+                "-llibopencv_objdetect420",
+                "-llibopencv_photo420",
+                "-llibopencv_stitching420",
+                "-llibopencv_video420",
+                "-llibopencv_videoio420",
+                "-I", "C:\\lightOCLSDK\\include",
+                "-L", "C:\\lightOCLSDK\\lib\\x86_64",
+                "-l", "OpenCL"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}
